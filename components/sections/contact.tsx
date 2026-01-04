@@ -34,13 +34,18 @@ export function Contact() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload)
       });
-      if (!res.ok) throw new Error("Failed to send");
+
+      if (!res.ok) {
+        throw new Error("Failed to send");
+      }
+
+      // If the response body is empty, treat it as success anyway.
       setStatus("success");
       setFeedback("Your email is sent. If urgent, please email me directly as well.");
       e.currentTarget.reset();
     } catch (err) {
       setStatus("error");
-      setFeedback("Couldn’t send right now. Please email me directly.");
+      setFeedback("If there’s any issue with the form, you can always contact me directly by email.");
     }
   };
   return (
@@ -139,7 +144,11 @@ export function Contact() {
           </Button>
         </div>
         {feedback ? (
-          <p className={`text-sm ${status === "error" ? "text-destructive" : "text-foreground"}`}>
+          <p
+            className={`text-sm ${
+              status === "error" ? "text-destructive" : status === "success" ? "text-primary" : "text-foreground"
+            }`}
+          >
             {feedback}
           </p>
         ) : null}

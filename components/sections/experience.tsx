@@ -12,8 +12,8 @@ const techHighlights: Record<string, string[]> = {
 
 const logoMap: Record<string, string> = {
   BubbleRAN: "/bubbleran.png",
-  EURECOM: "/eurecom.png",
-  Innodeep: "/innodeep.png",
+  EURECOM: "/EURECOM.png",
+  Innodeep: "/Innodeep.png",
   "Groupe SFM": "/SFM.png"
 };
 

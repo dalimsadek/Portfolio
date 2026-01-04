@@ -18,6 +18,16 @@ export function Projects() {
     return data.projects.filter((project) => project.highlights?.includes(highlight));
   }, [highlight]);
 
+  const formatRange = (project: (typeof data.projects)[number]) => {
+    if (project.timeframe) return project.timeframe;
+    if (project.start_date || project.end_date) {
+      const start = project.start_date ?? "";
+      const end = project.end_date ?? "";
+      return `${start}${start && end ? " — " : ""}${end}`;
+    }
+    return "";
+  };
+
   return (
     <section id="projects" className="section-shell container mx-auto py-16">
       <div className="mb-6 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
@@ -64,10 +74,14 @@ export function Projects() {
                   {project.description.map((line) => (
                     <p key={line}>{line}</p>
                   ))}
-                  <p className="text-sm font-semibold text-foreground">Timeline: {project.start_date} — {project.end_date}</p>
+                  {formatRange(project) ? (
+                    <p className="text-sm font-semibold text-foreground">Timeline: {formatRange(project)}</p>
+                  ) : null}
                 </div>
               </Modal>
-              <span className="text-xs text-mutedForeground">{project.start_date} — {project.end_date}</span>
+              {formatRange(project) ? (
+                <span className="text-xs text-mutedForeground">{formatRange(project)}</span>
+              ) : null}
             </div>
           </Card>
         ))}

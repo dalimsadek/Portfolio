@@ -43,9 +43,15 @@ export type Project = {
   name: string;
   technologies: string[];
   highlights: string[];
-  start_date: string;
-  end_date: string;
   description: string[];
+  start_date?: string;
+  end_date?: string;
+  timeframe?: string;
+  context?: string;
+  type?: string;
+  organization?: string;
+  location?: string;
+  links?: Record<string, string>;
 };
 
 export type CertificationsAndInterests = {

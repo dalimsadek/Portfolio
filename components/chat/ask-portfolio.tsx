@@ -24,7 +24,7 @@ export function AskPortfolioWidget() {
   const [messages, setMessages] = useState<ChatMessage[]>([
     {
       sender: "assistant",
-      text: "Hi! Ask me about Mohamed's skills, projects, or internships."
+      text: "Hi! Ask me about Mohamed&apos;s skills, projects, or internships."
     }
   ]);
   const [input, setInput] = useState("");
@@ -91,7 +91,7 @@ export function AskPortfolioWidget() {
               <div className="mb-3 flex items-center justify-between">
                 <div>
                   <p className="text-xs font-semibold text-primary">Ask My Portfolio</p>
-                  <p className="text-sm text-mutedForeground">Answers come only from Mohamed's CV.</p>
+                  <p className="text-sm text-mutedForeground">Answers come only from Mohamed&apos;s CV.</p>
                 </div>
                 <Button variant="ghost" size="sm" onClick={() => setOpen(false)} aria-label="Close chat">
                   <X className="h-4 w-4" />

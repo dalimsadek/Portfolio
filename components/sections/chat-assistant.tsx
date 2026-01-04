@@ -76,7 +76,7 @@ export function ChatAssistantSection() {
     <section id="ask" className="section-shell container mx-auto py-16">
       <div className="mb-6 space-y-2">
         <p className="text-base font-semibold text-mutedForeground">Ask My Portfolio</p>
-        <h2 className="text-3xl font-bold">Chat with Mohamed's CV</h2>
+        <h2 className="text-3xl font-bold">Chat with Mohamed&apos;s CV</h2>
       </div>
       <Card className="grid gap-6 p-6 md:grid-cols-[2fr_1fr]">
         <div>

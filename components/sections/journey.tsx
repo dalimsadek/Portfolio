@@ -5,7 +5,7 @@ import { Badge } from "../ui/badge";
 import { Button } from "../ui/button";
 import { Card } from "../ui/card";
 import { motion, AnimatePresence } from "framer-motion";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { ArrowLeft, ArrowRight, Brain, Calculator, Share2, Waves } from "lucide-react";
 import { Timeline, type TimelineItem } from "../ui/timeline";
 
@@ -23,20 +23,26 @@ export function JourneySection() {
 
   const maxIndex = Math.max(0, journey.length - 1);
 
-  const goTo = (i: number) => {
-    if (i < 0 || i > maxIndex) return;
-    setIndex(i);
-  };
+  const goTo = useCallback(
+    (i: number) => {
+      if (i < 0 || i > maxIndex) return;
+      setIndex(i);
+    },
+    [maxIndex]
+  );
 
-  const onKey = (e: KeyboardEvent) => {
-    if (e.key === "ArrowRight") goTo(index + 1);
-    if (e.key === "ArrowLeft") goTo(index - 1);
-  };
+  const onKey = useCallback(
+    (e: KeyboardEvent) => {
+      if (e.key === "ArrowRight") goTo(index + 1);
+      if (e.key === "ArrowLeft") goTo(index - 1);
+    },
+    [goTo, index]
+  );
 
   useEffect(() => {
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [index]);
+  }, [onKey]);
 
   const timelineStops: TimelineItem[] = useMemo(() => {
     return journey.map((step, i) => {

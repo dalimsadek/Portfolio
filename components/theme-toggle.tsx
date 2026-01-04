@@ -10,7 +10,12 @@ export function ThemeToggle({ children }: { children?: React.ReactNode }) {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => setMounted(true), []);
-  if (!mounted) return <Button variant="ghost" size="sm" aria-label="toggle theme" />;
+  if (!mounted)
+    return (
+      <Button variant="ghost" size="sm" aria-label="toggle theme" className="rounded-full px-3">
+        {children ?? <Moon className="h-4 w-4" />}
+      </Button>
+    );
 
   const isDark = theme === "dark" || (!theme && typeof window !== "undefined" && window.matchMedia("(prefers-color-scheme: dark)").matches);
 

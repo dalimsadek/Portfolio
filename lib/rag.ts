@@ -33,10 +33,11 @@ export function buildPortfolioDocs(data: PortfolioData): DocChunk[] {
   });
 
   data.projects.forEach((proj, idx) => {
+    const range = proj.timeframe ?? `${proj.start_date ?? ""} to ${proj.end_date ?? ""}`;
     docs.push({
       id: `project-${idx}`,
       source: `project:${proj.name}`,
-      text: `${proj.name} (${proj.start_date} to ${proj.end_date}). Tech: ${proj.technologies.join(", ")}. Details: ${proj.description.join("; ")}`
+      text: `${proj.name} (${range}). Tech: ${proj.technologies.join(", ")}. Details: ${proj.description.join("; ")}`
     });
   });
 

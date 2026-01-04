@@ -1,0 +1,386 @@
+{
+  "personal_information": {
+    "full_name": "Mohamed Ali Msadek",
+    "email": "Mohamed-Ali.Msadek@eurecom.fr",
+    "phone": "+33 760755972",
+    "location": "Antibes, France",
+    "linkedin": "https://www.linkedin.com/in/mohamed-ali-msadek/",
+    "github": "https://github.com/dalimsadek"
+  },
+  "profile": {
+    "title": "AI Engineer",
+    "summary": "AI Engineer experienced in deploying AI models from research to production environments. Skilled in LLMs, RAG, agentic AI, and MLOps to design end-to-end intelligent systems using modern frameworks. Driven to build scalable, data-driven solutions with measurable real-world impact.",
+    "availability": "March 2026"
+  },
+  "education": [
+    {
+      "institution": "EURECOM",
+      "location": "Sophia Antipolis, France",
+      "degree": "Master’s in Data Science (Dual Degree Program)",
+      "start_date": "Sep 2024",
+      "end_date": "Mar 2026",
+      "relevant_courses": [
+        "Machine Learning",
+        "Deep Learning",
+        "Generative AI",
+        "Database Systems",
+        "Probability & Statistics"
+      ]
+    },
+    {
+      "institution": "Higher School of Communication of Tunis (Sup’Com)",
+      "location": "Ariana, Tunisia",
+      "degree": "ICT Engineering Student",
+      "start_date": "Sep 2022",
+      "end_date": "Jun 2025",
+      "relevant_courses": [
+        "Algorithms & Data Structures",
+        "Computer Systems",
+        "Network Architecture (RAN, 4G, 5G)",
+        "Wireless Communications"
+      ]
+    },
+    {
+      "institution": "Preparatory Institute for Engineering Studies",
+      "location": "Monastir, Tunisia",
+      "degree": "Pre-Engineering Studies",
+      "start_date": "Sep 2020",
+      "end_date": "Jun 2022",
+      "distinction": "Ranked among the top 5% in the national engineering competition"
+    }
+  ],
+  "skills": {
+    "programming_and_software_engineering": [
+      "Python",
+      "C++",
+      "SQL",
+      "REST APIs",
+      "Git",
+      "GitHub",
+      "CI/CD"
+    ],
+    "machine_learning_and_deep_learning": [
+      "TensorFlow",
+      "PyTorch",
+      "Keras",
+      "XGBoost",
+      "OpenCV"
+    ],
+    "generative_ai_and_llms": [
+      "Tokenization",
+      "Prompt Engineering",
+      "Fine-Tuning (LoRA, QLoRA, PEFT)",
+      "Retrieval-Augmented Generation (RAG)",
+      "LangChain",
+      "Vector Databases (FAISS, Chroma)"
+    ],
+    "deployment_and_mlops": [
+      "FastAPI",
+      "Flask",
+      "Docker"
+    ],
+    "cloud_and_devops": [
+      "AWS SageMaker",
+      "GCP Vertex AI",
+      "Linux",
+      "GitHub Actions",
+      "Kubernetes"
+    ],
+    "agentic_ai": [
+      "Multi-Agent Coordination (A2A)",
+      "Tool Orchestration",
+      "Model Context Protocol (MCP)"
+    ],
+    "databases": [
+      "MySQL",
+      "PostgreSQL"
+    ],
+    "languages": {
+      "Arabic": "Native",
+      "English": "C1",
+      "French": "C1"
+    }
+  },
+  "experience": [
+    {
+      "company": "BubbleRAN",
+      "location": "Biot, France",
+      "role": "AI Engineer Intern",
+      "start_date": "Sep 2025",
+      "end_date": "Present",
+      "responsibilities": [
+        "Developing an agentic AI solution for predictive maintenance and anomaly detection within 5G O-RAN systems",
+        "Building an end-to-end data pipeline for training and real-time inference integrated with a Kubernetes cluster",
+        "Fine-tuning and deploying deep learning models (Transformers, LSTM) for anomaly detection, forecasting, and explainability",
+        "Designing and integrating AI agents using the A2A protocol for autonomous coordination and explainable decision-making",
+        "Integrating all components into the MX-AI platform as the primary end-to-end developer"
+      ]
+    },
+    {
+      "company": "EURECOM",
+      "location": "Sophia Antipolis, France",
+      "role": "AI Research Intern",
+      "start_date": "Jul 2025",
+      "end_date": "Aug 2025",
+      "responsibilities": [
+        "Developed an LLM-based evaluation pipeline using zero-shot and few-shot prompt engineering",
+        "Worked with open-weight models such as LLaMA and Mistral to assess Wikidata reference reliability",
+        "Benchmarked model-human agreement and automated evaluations using LangChain"
+      ],
+      "links": {
+        "github": "https://github.com/dalimsadek/WD_references_analysis"
+      }
+    },
+    {
+      "company": "Innodeep",
+      "location": "Monaco, France",
+      "role": "Data Science Intern",
+      "start_date": "Jun 2023",
+      "end_date": "Aug 2023",
+      "responsibilities": [
+        "Built an end-to-end deep learning pipeline for mammogram tumor segmentation and classification",
+        "Applied transfer learning techniques for medical imaging tasks",
+        "Deployed the solution on AWS using Streamlit",
+        "Integrated CI/CD for automated retraining and model drift detection"
+      ],
+      "links": {
+        "github": "https://github.com/dalimsadek/Breast-Cancer-Segmentation"
+      }
+    },
+    {
+    "company": "Groupe SFM",
+    "location": "Tunis, Tunisia",
+    "role": "Data Science Intern",
+    "start_date": "Dec 2023",
+    "end_date": "Mar 2024",
+    "responsibilities": [
+        "Worked on an AI-driven air conditioner optimization project using machine learning techniques",
+        "Performed data engineering and preprocessing to extract features from sensor data",
+        "Designed and implemented data visualizations to analyze system behavior and usage patterns",
+        "Applied K-Means clustering to categorize sensor data and enable cluster-based predictions",
+        "Contributed to improving system performance and energy efficiency through data-driven optimization"
+    ]
+    }
+  ],
+   "projects": [
+    {
+      "name": "Agentic AI for 5G O-RAN Predictive Maintenance",
+      "context": "BubbleRAN Internship",
+      "type": "Industry Project",
+      "highlights": [
+        "LLMs & Generative AI",
+        "MLOps & Production",
+        "Data Engineering",
+        "Cloud & DevOps",
+        "AI / Machine Learning"
+      ],
+      "technologies": [
+        "Python",
+        "Transformers",
+        "LSTM",
+        "Kubernetes",
+        "Docker",
+        "LLMs",
+        "Agentic AI",
+        "MLOps",
+        "Data Engineering",
+        "Deep Learning"
+      ],
+      "description": [
+        "Designed and implemented an agentic AI system for anomaly detection and predictive maintenance in 5G O-RAN environments",
+        "Built an end-to-end data pipeline for model training and real-time inference integrated with a Kubernetes cluster",
+        "Fine-tuned deep learning models (Transformers, LSTM) for anomaly detection, forecasting, and explainability",
+        "Implemented autonomous AI agents using the A2A protocol for coordinated and explainable decision-making",
+        "Integrated the full solution into the MX-AI platform as the primary end-to-end developer"
+      ],
+      "timeframe": "Sep 2025 – Present",
+      "organization": "BubbleRAN"
+    },
+    {
+      "name": "LLM-Based Evaluation of Wikidata Reference Reliability",
+      "context": "EURECOM Research Internship",
+      "type": "Research Project",
+      "highlights": [
+        "LLMs & Generative AI",
+        "AI / Machine Learning"
+      ],
+      "technologies": [
+        "LLMs",
+        "Prompt Engineering",
+        "LangChain",
+        "LLaMA",
+        "Mistral"
+      ],
+      "description": [
+        "Developed an LLM-based evaluation pipeline to assess the reliability of Wikidata references",
+        "Applied zero-shot and few-shot prompt engineering techniques to benchmark model performance",
+        "Evaluated agreement between LLM predictions and human annotations",
+        "Automated evaluation workflows using LangChain"
+      ],
+      "timeframe": "Jul 2025 – Aug 2025",
+      "organization": "EURECOM",
+      "links": {
+        "github": "https://github.com/dalimsadek/WD_references_analysis"
+      }
+    },
+    {
+      "name": "Mammogram Tumor Segmentation and Classification System",
+      "context": "Innodeep Internship",
+      "type": "Industry Project",
+      "highlights": [
+        "Computer Vision",
+        "AI / Machine Learning",
+        "Cloud & DevOps",
+        "MLOps & Production"
+      ],
+      "technologies": [
+        "Python",
+        "Deep Learning",
+        "Transfer Learning",
+        "CNN",
+        "AWS",
+        "Docker",
+        "Streamlit",
+        "CI/CD"
+      ],
+      "description": [
+        "Built an end-to-end deep learning pipeline for mammogram tumor segmentation and classification",
+        "Applied transfer learning techniques to improve performance on medical imaging data",
+        "Deployed the solution on AWS using Streamlit for interactive visualization",
+        "Integrated CI/CD pipelines for automated retraining and model drift detection"
+      ],
+      "timeframe": "Jun 2023 – Aug 2023",
+      "organization": "Innodeep",
+      "links": {
+        "github": "https://github.com/dalimsadek/Breast-Cancer-Segmentation"
+      }
+    },
+    {
+      "name": "Automation and RAG-based TinyML Code Tool",
+      "type": "Academic Project",
+      "highlights": [
+        "LLMs & Generative AI",
+        "Embedded / TinyML",
+        "AI / Machine Learning"
+      ],
+      "technologies": [
+        "Python",
+        "LangChain",
+        "FAISS",
+        "LLMs",
+        "TinyML",
+        "Agentic AI"
+      ],
+      "description": [
+        "Developed an LLM-driven automation pipeline for TinyML code generation and validation",
+        "Integrated Retrieval-Augmented Generation for context-aware embedded code generation",
+        "Designed a retrieval layer using FAISS and LangChain"
+      ],
+      "timeframe": "Mar 2025 – Jun 2025"
+    },
+    {
+      "name": "FMCW Radar-Based Gesture Detection",
+      "type": "Academic Project",
+      "highlights": [
+        "Computer Vision",
+        "AI / Machine Learning"
+      ],
+      "technologies": [
+        "CNN",
+        "Python",
+        "Deep Learning",
+        "Data Visualization"
+      ],
+      "description": [
+        "Built an end-to-end CNN pipeline for gesture recognition using 2D and 3D radar data",
+        "Achieved 88% classification accuracy",
+        "Implemented preprocessing and data augmentation pipelines for improved generalization"
+      ],
+      "timeframe": "Apr 2024 – Jun 2024"
+    },
+    {
+      "name": "AI-Driven Air Conditioner Optimization",
+      "context": "Groupe SFM Internship",
+      "type": "Industry Project",
+      "highlights": [
+        "AI / Machine Learning",
+        "Data Engineering",
+        "MLOps & Production"
+      ],
+      "technologies": [
+        "Python",
+        "Machine Learning",
+        "K-Means",
+        "Data Engineering",
+        "Data Visualization",
+        "CI/CD"
+      ],
+      "description": [
+        "Developed a machine learning-based system to predict optimal air conditioner settings and temperature values",
+        "Processed and engineered sensor data to build meaningful feature representations",
+        "Used K-Means clustering to group operating conditions and improve prediction accuracy",
+        "Created insightful visualizations to support analysis and decision-making",
+        "Focused on improving energy efficiency and system performance through data-driven optimization"
+      ],
+      "timeframe": "Dec 2023 – Mar 2024",
+      "organization": "Groupe SFM",
+      "location": "Tunis, Tunisia"
+    }
+  ],
+  "certifications_and_interests": {
+    "certifications": [
+      "Project Management Fundamentals"
+    ],
+    "interests": [
+      "Public speaking",
+      "Teaching and tutoring",
+      "Sports",
+      "Traveling",
+      "Cross-cultural collaboration"
+    ]
+  },
+  "journey": [
+    {
+      "id": "Mahdia",
+      "title": "Mahdia, Tunisia — Where It Started",
+      "subtitle": "Tunisian Riviera",
+      "location": "Mahdia, Tunisia",
+      "icon": "wave",
+      "description": "I grew up in Mahdia, a coastal city on the Tunisian Riviera, next to the Mediterranean Sea. As a student, I was always fascinated by how things worked and driven by a strong ambition to become an engineer. This environment shaped my curiosity, discipline, and long-term vision of building a successful engineering career.",
+      "highlight": "Early passion for engineering and long-term ambition",
+      "timeline": "Early years"
+    },
+    {
+      "id": "IPEIM",
+      "title": "Monastir — Building Strong Foundations",
+      "subtitle": "Pre-Engineering Studies",
+      "location": "Monastir, Tunisia",
+      "icon": "calculator",
+      "description": "I moved to Monastir to pursue pre-engineering studies focused on mathematics and physics. During this period, I began deeply engaging with analytical thinking, problem solving, and technical reasoning. I worked on complex mathematical and technological problems that laid the foundation for my engineering mindset and prepared me for high-level competitive examinations.",
+      "highlight": "Top 5% in the national engineering entrance examination",
+      "timeline": "2020 – 2022"
+    },
+    {
+      "id": "SupCom",
+      "title": "Sup’Com — Entering the World of Engineering",
+      "subtitle": "ICT Engineering (Telecommunications)",
+      "location": "Ariana, Tunisia",
+      "icon": "network",
+      "description": "I joined the Higher School of Communication of Tunis (Sup’Com), one of the most prestigious engineering schools in Tunisia, to pursue a Bachelor’s degree in Telecommunications and ICT engineering. There, I developed a strong foundation in computer systems, networks, wireless communications, and large-scale technological systems, while continuously ranking among the best students.",
+      "highlight": "Ranked among top students and selected for international dual-degree mobility",
+      "timeline": "2022 – 2025"
+    },
+    {
+      "id": "Eurecom",
+      "title": "EURECOM — From Engineering to AI",
+      "subtitle": "Master’s in Data Science (Dual Degree)",
+      "location": "Sophia Antipolis, France — French Riviera",
+      "icon": "brain",
+      "description": "I joined EURECOM on the French Riviera to strengthen my expertise in computer science, artificial intelligence, and data science. This step allowed me to combine my engineering background with advanced AI, machine learning, and systems knowledge, positioning me as a dual-degree graduate with a strong balance between theory, research, and real-world engineering applications.",
+      "highlight": "Dual-degree graduate with strong AI and computer science foundations",
+      "timeline": "2024 – 2026"
+    }
+  ]
+
+
+}

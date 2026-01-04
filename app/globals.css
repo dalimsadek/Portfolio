@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 220 20% 98%;
+  --foreground: 221 39% 11%;
+  --muted: 220 16% 95%;
+  --muted-foreground: 221 15% 40%;
+  --card: 0 0% 100%;
+  --card-foreground: 221 39% 11%;
+  --border: 220 13% 90%;
+  --primary: 229 88% 64%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 222 26% 22%;
+  --secondary-foreground: 0 0% 100%;
+  --accent: 166 67% 49%;
+  --accent-foreground: 222 47% 11%;
+  --ring: 229 88% 64%;
+}
+
+.dark {
+  --background: 222 47% 6%;
+  --foreground: 210 40% 98%;
+  --muted: 222 35% 10%;
+  --muted-foreground: 215 15% 65%;
+  --card: 222 31% 8%;
+  --card-foreground: 210 40% 98%;
+  --border: 222 32% 16%;
+  --primary: 222 100% 63%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 166 67% 49%;
+  --secondary-foreground: 222 47% 11%;
+  --accent: 229 88% 64%;
+  --accent-foreground: 222 47% 11%;
+  --ring: 166 67% 49%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+html,
+body {
+  max-width: 100%;
+}
+
+body {
+  background: radial-gradient(circle at 0% 0%, rgba(114, 159, 255, 0.22), transparent 30%),
+    radial-gradient(circle at 100% 20%, rgba(111, 242, 198, 0.18), transparent 25%),
+    hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: "Manrope", "Space Grotesk", system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container-gap {
+  gap: 3rem;
+}
+
+.section-shell {
+  scroll-margin-top: 96px;
+}
+
+.gradient-card {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.5));
+  backdrop-filter: blur(10px);
+}
+
+.dark .gradient-card {
+  background: linear-gradient(145deg, rgba(33, 37, 50, 0.75), rgba(22, 24, 32, 0.75));
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(120, 132, 255, 0.35);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}

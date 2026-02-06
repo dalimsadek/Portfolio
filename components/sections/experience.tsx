@@ -12,14 +12,14 @@ const techHighlights: Record<string, string[]> = {
 
 const logoMap: Record<string, string> = {
   BubbleRAN: "/bubbleran.png",
-  EURECOM: "/EURECOM.png",
-  Innodeep: "/Innodeep.png",
+  EURECOM: "/eurecom.png",
+  Innodeep: "/innodeep.png",
   "Groupe SFM": "/SFM.png"
 };
 
 export function Experience() {
   return (
-    <section id="experience" className="section-shell container mx-auto pt-10 pb-16">
+    <section id="experience" className="section-shell container mx-auto py-16">
       <div className="mb-8 space-y-2">
         <p className="text-base font-semibold text-mutedForeground">Experience</p>
         <h2 className="text-2xl font-bold">Shipping AI with real-world constraints</h2>
@@ -30,10 +30,10 @@ export function Experience() {
             <span className="absolute -left-[14px] top-1 h-3 w-3 rounded-full bg-primary" />
             <Card className="gradient-card">
               <div className="flex flex-col justify-between gap-3 md:flex-row md:items-start">
-                <div className="flex flex-1 items-start gap-5">
+                <div className="flex flex-1 items-start gap-3">
                   {logoMap[role.company] ? (
-                    <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-2xl border border-border bg-muted">
-                      <Image src={logoMap[role.company]} alt={`${role.company} logo`} fill className="object-contain p-2.5" />
+                    <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-2xl border border-border bg-muted">
+                      <Image src={logoMap[role.company]} alt={`${role.company} logo`} fill className="object-contain p-1.5" />
                     </div>
                   ) : null}
                   <div>
